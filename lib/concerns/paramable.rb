@@ -3,7 +3,7 @@ module Paramable
 class InstanceMethods
 
   def to_param
-    name.all.downcase.gsub(' ', '-')
+    self.name.downcase.gsub(' ', '-')
   end
 
 end
